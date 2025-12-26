@@ -1,117 +1,117 @@
-# Generadores Pseudoaleatorios y Pruebas Estadísticas
+# Pseudorandom Generators and Statistical Tests
 
-## Descripción del Proyecto
+## Project Description
 
-Este proyecto web permite **generar secuencias de números pseudoaleatorios** mediante diferentes algoritmos clásicos y aplicar **pruebas estadísticas** para verificar su aleatoriedad. Está diseñado como material práctico para la materia **Simulación** de la **Universidad Tecnológica Nacional - Facultad Regional Tucumán (UTN-FRT)**.
+This web project allows you to **generate sequences of pseudorandom numbers** using several classic algorithms and apply **statistical tests** to verify their randomness. It is designed as practical material for the subject **Simulación** at the **Universidad Tecnológica Nacional - Facultad Regional Tucumán (UTN-FRT)**.
 
-## Características Principales
+## Key Features
 
-- **Generadores de números pseudoaleatorios:**
-  - Método Congruencial Aditivo
-  - Método Congruencial Mixto
-  - Método Congruencial Multiplicativo
-  - Método de la Parte Central del Cuadrado
-  - Método de Lehmer
+- **Pseudorandom number generators:**
+  - Additive Congruential Method
+  - Mixed Congruential Method
+  - Multiplicative Congruential Method
+  - Middle Square Method
+  - Lehmer Method
 
-- **Pruebas estadísticas implementadas:**
-  - Prueba de los Promedios
-  - Prueba de la Serie (χ²)
-  - Prueba de Frecuencia (χ²)
-  - Prueba de Corridas Arriba y Abajo de la Media
-  - Prueba de Kolmogorov-Smirnov (K-S)
+- **Implemented statistical tests:**
+  - Mean Test
+  - Series Test (χ²)
+  - Frequency Test (χ²)
+  - Runs Test (above and below the mean)
+  - Kolmogorov–Smirnov (K–S) Test
 
-- **Validación de calidad de números pseudoaleatorios:**  
-  Se incluyen herramientas para analizar si los números generados son aptos para simulaciones.
+- **Quality validation of pseudorandom numbers:**  
+  Tools are included to analyze whether the generated numbers are suitable for simulations.
 
-## Tecnologías Utilizadas
+## Technologies Used
 
 - HTML5 + CSS3  
 - JavaScript  
 - Bootstrap 5.3  
 
-## Instrucciones de Uso
+## How to Use
 
-1. Ingresá a la página principal (`index.html`).
-2. Seleccioná un **generador** o una **prueba estadística**.
-3. Completá los campos solicitados (semilla, iteraciones, valores críticos, etc.).
-4. Hacé clic en **"Calcular"** o **"Generar"** para ejecutar el algoritmo.
-5. Visualizá los resultados en pantalla.
+1. Open the main page (index.html).
+2. Select a **generator** or a **statistical test**.
+3. Fill in the required fields (seed, iterations, critical values, etc.).
+4. Click **"Calculate"** or **"Generate"** to run the algorithm.
+5. View the results on screen.
 
-## Fundamento Matemático
+## Mathematical Foundation
 
-### Generadores
+### Generators
 
-- **Congruencial Aditivo:**
+- **Additive Congruential:**
 Xₙ = (Xₙ₋₁ + Xₙ₋₂) mod m
-- **Congruencial Mixto:**
+- **Mixed Congruential:**
 Xₙ₊₁ = (a · Xₙ + c) mod m
-- **Congruencial Multiplicativo:**
+- **Multiplicative Congruential:**
 Xₙ₊₁ = (a · Xₙ) mod m
-- **Parte Central del Cuadrado:** Eleva al cuadrado la semilla y toma los dígitos centrales como nuevo valor.
-- **Lehmer:** Variante del multiplicativo que trabaja con precisión de bits: Xₙ₊₁ = (a · Xₙ) mod m
+- **Middle Square:** Squares the seed and takes the central digits as the new value.
+- **Lehmer:** A multiplicative variant that works with bit precision: Xₙ₊₁ = (a · Xₙ) mod m
 
 
-### Pruebas estadísticas
+### Statistical Tests
 
-- **Promedios:** Evalúa si la media de los números generados tiende a 0.5.  
-- **Serie:** Analiza la independencia de pares sucesivos.  
-- **Frecuencia:** Distribuye los valores en intervalos y compara con la distribución uniforme.  
-- **Corridas:** Verifica aleatoriedad en secuencias por encima y debajo de la media.  
-- **Kolmogorov-Smirnov:** Compara la distribución acumulada empírica con la teórica.
+- **Means:** Evaluates whether the mean of the generated numbers tends to 0.5.  
+- **Series:** Analyzes the independence of successive pairs.  
+- **Frequency:** Divides values into intervals and compares them with the uniform distribution.  
+- **Runs:** Checks randomness in sequences above and below the mean.  
+- **Kolmogorov–Smirnov:** Compares the empirical cumulative distribution with the theoretical one.
 
-## Estado del Proyecto
+## Project Status
 
-Completado ✔️  
+Completed ✔️  
 
-Todos los generadores y pruebas funcionan correctamente y han sido validados con datos de ejemplo.
+All generators and tests work correctly and have been validated with sample data.
 
-## Descripción de archivos
+## File Description
 
-- **index.html**: Página de inicio con menú hacia los generadores y pruebas.  
-- **metodoCongruencialAditivo.html**: Interfaz para el generador congruencial aditivo.  
-- **metodoCongruencialMixto.html**: Interfaz para el generador congruencial mixto.  
-- **metodoCongruencialMultiplicativo.html**: Interfaz para el generador congruencial multiplicativo.  
-- **metodoDeLaParteCentralDelCuadrado.html**: Interfaz para el método de la parte central del cuadrado.  
-- **metodoDeLehmer.html**: Interfaz para el generador de Lehmer.  
-- **pruebaDeLosPromedios.html**: Interfaz para la prueba estadística de los promedios.  
-- **serie.html**: Interfaz para la prueba estadística de la serie (χ²).  
-- **frecuencia.html**: Interfaz para la prueba estadística de frecuencia (χ²).  
-- **ks.html**: Interfaz para la prueba estadística de Kolmogorov-Smirnov.  
-- **corrida.html**: Interfaz para la prueba de corridas arriba y abajo de la media.  
-- **functions/congruencialAditivo.js**: Lógica del método congruencial aditivo.  
-- **functions/congruencialMixto.js**: Lógica del método congruencial mixto.  
-- **functions/congruencialMultiplicativo.js**: Lógica del método congruencial multiplicativo.  
-- **functions/parteCentralCuadrado.js**: Lógica del método de la parte central del cuadrado.  
-- **functions/lehmer.js**: Lógica del método de Lehmer.  
-- **functions/promedios.js**: Prueba estadística de los promedios.  
-- **functions/serie.js**: Prueba estadística de la serie (χ²).  
-- **functions/frecuencia.js**: Prueba estadística de frecuencia (χ²).  
-- **functions/ks.js**: Prueba estadística de Kolmogorov-Smirnov.  
-- **functions/corrida.js**: Prueba de corridas arriba y abajo de la media.
-- **css/style.css**: Estilos personalizados para inputs, botones y márgenes.  
-- **public/calculadora-favicon.png**: Ícono del proyecto visible en la pestaña del navegador.
+- **index.html**: Home page with a menu linking to generators and tests.  
+- **metodoCongruencialAditivo.html**: Interface for the additive congruential generator.  
+- **metodoCongruencialMixto.html**: Interface for the mixed congruential generator.  
+- **metodoCongruencialMultiplicativo.html**: Interface for the multiplicative congruential generator.  
+- **metodoDeLaParteCentralDelCuadrado.html**: Interface for the middle square method.  
+- **metodoDeLehmer.html**: Interface for the Lehmer generator.  
+- **pruebaDeLosPromedios.html**: Interface for the mean statistical test.  
+- **serie.html**: Interface for the series statistical test (χ²).  
+- **frecuencia.html**: Interface for the frequency statistical test (χ²).  
+- **ks.html**: Interface for the Kolmogorov–Smirnov statistical test.  
+- **corrida.html**: Interface for the runs test above and below the mean.  
+- **functions/congruencialAditivo.js**: Logic for the additive congruential method.  
+- **functions/congruencialMixto.js**: Logic for the mixed congruential method.  
+- **functions/congruencialMultiplicativo.js**: Logic for the multiplicative congruential method.  
+- **functions/parteCentralCuadrado.js**: Logic for the middle square method.  
+- **functions/lehmer.js**: Logic for the Lehmer method.  
+- **functions/promedios.js**: Mean statistical test.  
+- **functions/serie.js**: Series statistical test (χ²).  
+- **functions/frecuencia.js**: Frequency statistical test (χ²).  
+- **functions/ks.js**: Kolmogorov–Smirnov statistical test.  
+- **functions/corrida.js**: Runs test above and below the mean.
+- **css/style.css**: Custom styles for inputs, buttons, and spacing.  
+- **public/calculadora-favicon.png**: Project icon visible in the browser tab.
 
-## Acceso al simulador
-Este proyecto está disponible en línea de forma gratuita.
-Podés acceder al simulador desde el siguiente enlace:
+## Access to the Simulator
+This project is available online free of charge.
+You can access the simulator at the following link:
 
-[Generador de pruebas pseudoaleatorias y pruebas estadísticas](https://simulaciongnape.netlify.app/)
+[Pseudorandom generator and statistical tests](https://pseudorandom-generators-and-tests.netlify.app/)
 
-## Equipo de Desarrollo
+## Development Team
 
-Este proyecto fue desarrollado por **Facundo Moya**, estudiante de **Ingeniería en Sistemas de Información** de la **Universidad Tecnológica Nacional - Facultad Regional Tucumán (UTN-FRT)**, como trabajo práctico de la materia **Simulación**.
+This project was developed by **Facundo Moya**, a student of **Ingeniería en Sistemas de Información** at **Universidad Tecnológica Nacional – Facultad Regional Tucumán (UTN-FRT)**, as part of the **Simulación** course.
 
-## Gestión del Código
+## Code Management
 
-El desarrollo del proyecto se realizó utilizando un flujo de trabajo simple con Git, donde:
+The project development used a simple Git workflow where:
 
-- Única rama activa:: `master` (ahora llamada `main` en muchos repositorios)
+- Single active branch: `master` (now called `main` in many repositories)
 
-## Compatibilidad y Diseño
+## Compatibility and Design
 
-El simulador fue diseñado para ser **responsive** gracias a Bootstrap. Es funcional en cualquier dispositivo, aunque se recomienda el uso en pantallas medianas o grandes para mayor comodidad en formularios y resultados.
+The simulator was designed to be **responsive** thanks to Bootstrap. It works on any device, although medium or large screens are recommended for more comfortable form entry and result viewing.
 
-## Cómo clonar el repositorio
+## How to clone the repository
 
 ```bash
-git clone https://github.com/facundomoya/gnape.git
+git clone https://github.com/facundomoya/pseudorandom-generators-and-tests.git
