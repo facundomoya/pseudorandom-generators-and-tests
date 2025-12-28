@@ -99,7 +99,7 @@ You can access the simulator at the following link:
 
 ## Development Team
 
-This project was developed by **Facundo Moya**, a student of **Ingeniería en Sistemas de Información** at **Universidad Tecnológica Nacional – Facultad Regional Tucumán (UTN-FRT)**, as part of the **Simulación** course.
+This project was developed by **Facundo Moya**, student of **Information Systems Engineering** at **Universidad Tecnológica Nacional – Facultad Regional Tucumán (UTN-FRT)**, as part of the *"Simulación"* subject.
 
 ## Code Management
 
